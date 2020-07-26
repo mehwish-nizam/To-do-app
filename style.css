@@ -1,9 +1,8 @@
 body{
     text-align: center; 
     margin: 0% ;
-    background-color:purple;
     padding-top: 3%;
-    
+    background-image: url('bg-image.jpg');    
 }
 .ab{
   margin-left: 15%;
@@ -12,7 +11,7 @@ body{
   
     height : 100px;
     padding: 5%;
-    padding-bottom : 1%;
+    padding-bottom : 0;
 }
 /* Style the input */
 input {
@@ -28,7 +27,7 @@ input {
   
   /* Style the "Add" button */
   .addBtn {
-    padding: 10px;
+    /*padding: 10px;
     width: 13%;
     background: #d9d9d9;
     color: #555;
@@ -38,7 +37,23 @@ input {
     cursor: pointer;
     transition: 0.3s;
     border-radius: 0;
-    margin-left: 0.6%;
+    margin-left: 0.6%;*/
+    
+  }
+  .addBtn{
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid #fff;
+    margin:0 0.3em 0.3em 0.3rem;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    float : left;
+    font-weight:500;
+    color:#fff;
+    text-align:center;
+    transition: all 0.2s;
   }
   .addBtn:hover {
     background-color: #bbb;
@@ -51,7 +66,7 @@ input {
      /*float: right;*/
     border: 0.2px solid white;
     display: block;
-    width : 71%;
+    width : 56%;
     /*margin-left: 14%;*/
   }
   .alldelBtn:hover{
@@ -88,7 +103,7 @@ input {
   }
   li{
     margin : 2% 30% 0.5% 5%;
-    background-color:#fff;
+    
     padding : 0.6% 1% 0.5% 0.5%;
     font-size : 1.5rem;
     text-decoration: none;
@@ -115,9 +130,11 @@ input {
   }
   .over{
     text-decoration: line-through;
-    background-color: #999;
+   /* background-color: #bbb;
+    padding-bottom: 5px;*/
+    color : red;
   }
-  .fa{
+  .fa-check-square{
     font-size: 20px;
     color: green;
   }
@@ -125,7 +142,24 @@ input {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size : 5 rem;
     color : #fff;
-    
-
   }
-/**********************************Background**************************/
+  @media only screen and (max-width: 600px) {
+    
+    input{
+      width : 70%;
+    }
+    .ab{
+      margin-left: 5%;
+    }
+    .alldelBtn{
+      width : 70%;
+      height: 40px;
+      padding-top: 10px;
+    }
+    li{
+      font-size : 1rem;
+      padding: 10px;
+      width: 350px;
+      margin-right: 10px;
+    }
+  }

@@ -19,7 +19,11 @@ function addItem(){
     delbtn.setAttribute("onclick","deleteItem(this)");
     //Edit button
     var editbtn =  document.createElement("button");
-    editbtn.appendChild(document.createTextNode("Edit"));
+   // editbtn.appendChild(document.createTextNode("Edit"));
+
+   var i = editbtn.appendChild(document.createElement("i"));
+   i.classList.add("fa");
+   i.classList.add("fa-pencil-square-o");
     editbtn.classList.add("editbtn");
     editbtn.setAttribute("onclick","edit(this)");
 
@@ -61,7 +65,7 @@ function edit(cell){
     if(edited != ""){
         cell.parentNode.firstChild.nodeValue = edited;}
     else{
-        alert("Blank item cannot br added");
+        alert("Blank item cannot be added");
     }
 }
 function done(cell){
