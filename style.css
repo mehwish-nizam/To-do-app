@@ -52,12 +52,15 @@ input {
     font-family:'Roboto',sans-serif;
     float : left;
     font-weight:500;
+    width: 56%;
     color:#fff;
     text-align:center;
     transition: all 0.2s;
+    background-color: #bbb;
   }
   .addBtn:hover {
-    background-color: #bbb;
+    background-color: #fff;
+    color: black;
   }
   .alldelBtn{
      background-color :rgb(175, 21, 21);
@@ -150,7 +153,7 @@ input {
     .ab{
       margin-left: 5%;
     }
-    .alldelBtn{
+    .alldelBtn,.addBtn{
       width : 90%;
       height: 40px;
       padding-top: 10px;
@@ -158,8 +161,9 @@ input {
     li{
       font-size : 1rem;
       padding: 10px;
-      width: 350px;
+      width: 330px;
       margin-right: 10px;
+      margin-top: 20px;
     }
   }
   
