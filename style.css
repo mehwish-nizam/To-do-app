@@ -2,7 +2,8 @@ body{
     text-align: center; 
     margin: 0% ;
     padding-top: 3%;
-    background-image: url('bg-image.jpg');    
+    background-image: url('bg-image.jpg');  
+    overflow-x: hidden;
 }
 .ab{
   margin-left: 15%;
@@ -130,8 +131,6 @@ input {
   }
   .over{
     text-decoration: line-through;
-   /* background-color: #bbb;
-    padding-bottom: 5px;*/
     color : red;
   }
   .fa-check-square{
@@ -146,13 +145,13 @@ input {
   @media only screen and (max-width: 600px) {
     
     input{
-      width : 70%;
+      width : 285.5px;
     }
     .ab{
       margin-left: 5%;
     }
     .alldelBtn{
-      width : 70%;
+      width : 90%;
       height: 40px;
       padding-top: 10px;
     }
@@ -163,3 +162,5 @@ input {
       margin-right: 10px;
     }
   }
+  
+  
