@@ -62,10 +62,10 @@ function deleteItem(item){
 }
 function edit(cell){
     var edited = prompt("Enter value to be edited",cell.parentNode.firstChild.nodeValue);
-    if(edited != ""){
+    if(edited != null){
         cell.parentNode.firstChild.nodeValue = edited;}
     else{
-        alert("Blank item cannot be added");
+        cell.parentNode.firstChild.nodeValue = cell.parentNode.firstChild.nodeValue;
     }
 }
 function done(cell){
